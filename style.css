@@ -1,0 +1,83 @@
+/* Reset اولیه */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+}
+
+/* بدنه */
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* هدر */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* بخش اصلی */
+main {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ورودی و دکمه */
+input[type="text"] {
+  padding: 10px;
+  width: 70%;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* لیست */
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #ddd;
+}
+
+/* فوتر */
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  color: #555;
+}
