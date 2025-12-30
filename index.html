@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interactive List</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do List حرفه‌ای</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>لیست من</h1>
-  </header>
+<header>
+  <h1>To-Do List حرفه‌ای</h1>
+</header>
 
-  <main>
-    <section>
-      <input type="text" id="itemInput" placeholder="آیتم جدید" />
-      <button id="addBtn">اضافه کن</button>
+<main>
+  <div class="input-group">
+    <input type="text" id="itemInput" placeholder="آیتم جدید">
+    <select id="tagSelect">
+      <option value="عمومی">عمومی</option>
+      <option value="کار">کار</option>
+      <option value="شخصی">شخصی</option>
+    </select>
+    <button id="addBtn">افزودن</button>
+  </div>
 
-      <ul id="itemList"></ul>
-    </section>
-  </main>
+  <div class="filter-group">
+    <label>فیلتر بر اساس تگ:</label>
+    <select id="filterSelect">
+      <option value="all">همه</option>
+      <option value="عمومی">عمومی</option>
+      <option value="کار">کار</option>
+      <option value="شخصی">شخصی</option>
+    </select>
+  </div>
 
-  <footer>
-    <p>JS Practice</p>
-  </footer>
+  <ul id="itemList"></ul>
+</main>
 
-  <script src="script.js"></script>
+<footer>
+  <p>© 2025 To-Do List حرفه‌ای</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
